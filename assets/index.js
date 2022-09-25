@@ -41,8 +41,50 @@ input.addEventListener('keydown', (event) => {
 })
 
 const calculate = () => {
+    resultInput.value = 'ERROR'
+    resultInput.classList.add('error')
+
     const result = eval(input.value)
     resultInput.value = result
+
+    resultInput.classList.remove('error')
 }
 
+// Botão de igual, ele que vai mostrar o resultado das contas.
 document.getElementById('equal').addEventListener('click', calculate)
+
+// Botão que vai trocar o tema da página.
+document.getElementById('themeSwitcher').addEventListener('click', () => {
+    if (main.dataset.theme === 'dark') {
+        root.style.setProperty('--bg-color', '#f1f5f9')
+        root.style.setProperty('--font-color', '#212529')
+        root.style.setProperty('--border-color', '#aaa')
+        root.style.setProperty('--primary-color', '#26834a')
+        main.dataset.theme = 'light'
+
+    } else {
+        root.style.setProperty('--bg-color', '#212529')
+        root.style.setProperty('--font-color', '#f1f5f9')
+        root.style.setProperty('--border-color', '#666')
+        root.style.setProperty('--primary-color', '#4dff91')
+        main.dataset.theme = 'dark'
+    }
+})
+
+// Esse botão copia o resultado da conta e manda para área de transferência
+document.getElementById('copyToClipboard').addEventListener('click', (event) => {
+    // O currentTarget é que está acionando o evente que nesse caso é o botão.
+    const button = event.currentTarget
+
+    if (button.innerText === 'Copy') {
+        button.innerText = 'Copied'
+        button.classList.add('success')
+        
+        // Atravez do navigator vamos usar a propriedade clipboard (indica a área de transferencia) e usar o writeText para escrever a menssagem.
+        navigator.clipboard.writeText(resultInput.value)
+
+    } else {
+        button.innerText = 'Copy'
+        button.classList.remove('success')
+    }
+})
