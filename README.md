@@ -5,7 +5,7 @@
 
 ### Link do projeto: https://ph-santos.github.io/calculadora/
 
-Esse projeto consiste em uma calculadora de funções simples como: somar, subtrair, dividir e o resto da divisão. Também é possivel alterar o tema da calculadora para claro e escuro.
+Esse projeto consiste em uma calculadora de funções básicas como: somar, subtrair, dividir e o resto da divisão. Também é possivel alterar o tema da calculadora para claro e escuro.
 
 ## Layout mobile
 ![Mobile 1](https://github.com/ph-santos/calculadora/blob/main/assets/images/img-mobile.png)
