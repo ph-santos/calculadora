@@ -17,9 +17,9 @@ Esse projeto consiste em uma calculadora de funções básicas como: somar, subt
 
 ![Web 2](https://github.com/ph-santos/calculadora/blob/main/assets/images/img-pc2.png)
 
+# Tecnologias utilizadas
 ## Front end
-- HTML / CSS / JS /
-
+- HTML / CSS / JS / TypeScript
 
 # Autor
 
