@@ -19,7 +19,7 @@ Esse projeto consiste em uma calculadora de funções básicas como: somar, subt
 
 # Tecnologias utilizadas
 ## Front end
-- HTML / CSS / JS / TypeScript
+- HTML / CSS / JS 
 
 # Autor
 
